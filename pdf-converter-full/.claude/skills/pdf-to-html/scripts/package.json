@@ -1,0 +1,19 @@
+{
+  "name": "pdf-to-html-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic helpers for the pdf-to-html skill. Render, sample colors, crop, render generated HTML, pixel-diff. The skill orchestrates these; Claude handles the visual analysis and HTML generation.",
+  "engines": { "node": ">=18.18" },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.665.0",
+    "@aws-sdk/client-s3": "^3.665.0",
+    "@aws-sdk/lib-dynamodb": "^3.665.0",
+    "@napi-rs/canvas": "^0.1.56",
+    "pdfjs-dist": "^4.7.76",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^24.0.0",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,19 @@
+# Python helpers for pdf-converter-full.
+# CPU-only torch wheels (no GPU in the runtime); the Dockerfile pre-installs these.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+claude-agent-sdk
+boto3
+pdfplumber
+pypdf
+numpy
+Pillow
+tinycss2
+pytesseract
+# WeasyPrint is the render fallback when system Chromium is unavailable.
+weasyprint
+# docling is the primary structured extractor. It is heavy (pulls torch/
+# transformers); remove it to slim the image and the pipeline falls back to
+# OCR/vision routing.
+docling
